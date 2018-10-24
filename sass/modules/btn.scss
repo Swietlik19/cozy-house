@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  padding: 14px 44px;
+
+  font-family: $title-font;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #292929; /* Тёмно-серый */
+
+  border-radius: 26px;
+  background-color: transparent;
+
+  -webkit-transition: .5s ease-in-out;
+  -moz--transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.site-offer__btn {
+  background-color: #f1cdb3; /* персиковый */
+}
+
+.site-offer__btn:hover {
+  background-color: #fddcc4; /* светло-персиковый */
+}
+
+.site-offer__btn:focus {
+  background-color: #fddcc4; /* светло-персиковый */
+}
+
+.site-offer__btn:active {
+  background-color: #ccb5a4;
+}

@@ -1,0 +1,51 @@
+.main {
+  @extend %item-reset;
+}
+
+.about__wrapper {
+  @extend %item-reset;
+
+  padding: {
+    top: 118px;
+    bottom: 128px;
+  }
+
+  background: {
+    image: url(../../img/bg-main-pets.png);
+    repeat: no-repeat;
+    position: 14.5% 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.about__content {
+  @extend %item-reset;
+
+  width: 35.5%;
+  margin-left: 50%;
+}
+
+.about__title {
+  width: 75.9%;
+  margin-bottom: 20px;
+}
+
+.catalog {
+  @extend %item-reset;
+
+  background-color: $bg-color-2;
+}
+
+.catalog__wrapper {
+  @extend %item-reset;
+
+  padding-top: 74px;
+}
+
+.catalog__title {
+  width: 36.75%;
+  margin: 0 auto;
+  margin-bottom: 68px;
+
+  text-align: center;
+}

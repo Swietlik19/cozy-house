@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta property="og:title" content="A house for pets, animals to adopt">
     <meta property="og:description" content="Here you can help our shelter for the pets or adopt an animal">
   <!-- TODO: <meta property="og:image" content="">-->
@@ -10,113 +11,131 @@
     <meta name="description" content="Here you can help our shelter for the pets or adopt an animal">
     <title>Cozy House - Shelter for pets in Boston</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="img/favicon/favicon.png" rel="icon" type="image/x-icon">
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-header__nav site-nav">
-        <div class="site-header__logo site-logo">
-          <img clss="site-logo__img" alt="our logo">
-        </div>
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">About the shelter</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Our pets</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">To help the shelter</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="site-header__wrapper wrapper">
+        <nav class="site-header__nav site-nav">
+          <a class="site-nav__logo site-logo" src="#">
+            <img clss="site-logo__img" src="img/logo.png" width="181" height="50" alt="our logo">
+          </a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">About the shelter</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Our pets</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">To help the shelter</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <section class="site-header__offer site-offer">
-        <h1 class="site-offer__title site-title">Not only people need a house</h1>
-        <p class="site-offer__text">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Cras gravida est in porttitor  porttitor.
-        Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-        <a href="#catalog" class="btn site-offer__btn">Make a friend</a>
-      </section>
+        <section class="site-header__offer site-offer">
+          <div class="site-offer__wrapper">
+            <h1 class="site-offer__title site-title">Not only people need a house</h1>
+            <p class="site-offer__text">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Cras gravida est in porttitor  porttitor.
+            Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
+            <a href="#catalog" class="btn site-offer__btn">Make a friend</a>
+          </div>
+        </section>
+      </div>
     </header>
 
     <main class="main">
       <section class="about">
-        <h2 class="title2 about__title">About the shelter “Cozy House”</h2>
-        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+        <div class="about__wrapper wrapper">
+          <div class="about__content">
+            <h2 class="title2 about__title">About the shelter “Cozy House”</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
 
-        <p class="about__text">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
-        ultrices pharetra. Morbi tempus at ante sit amet tristique.
-        Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
-        lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+            <p class="about__text">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
+            ultrices pharetra. Morbi tempus at ante sit amet tristique.
+            Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
+            lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+          </div>
+        </div>
       </section>
 
       <article class="catalog" id="catalog">
-        <h2 class="title2 catalog__title">Our friends who are looking for a house</h2>
+        <div class="catalog__wrapper wrapper">
+          <h2 class="title2 catalog__title">Our friends who are looking for a house</h2>
 
-        <ul class="catalog__list">
-          <li class="catalog__item catalog-item">
-            <div class="catalog-item__img">
-              <img alt="cat Katrine">
-            </div>
-            <b class="catalog-item__name">Katrine</b>
-            <a href="#" class="btn catalog-item__btn">Learn more</a>
-          </li>
-          <li class="catalog__item catalog-item">
-            <div class="catalog-item__img">
-              <img alt="dog Jennifer">
-            </div>
-            <b class="catalog-item__name">Jennifer</b>
-            <a href="#" class="btn catalog-item__btn">Learn more</a>
-          </li>
-          <li class="catalog__item catalog-item">
-            <div class="catalog-item__img">
-              <img alt="dog Woody">
-            </div>
-            <b class="catalog-item__name">Woody</b>
-            <a href="#" class="btn catalog-item__btn">Learn more</a>
-          </li>
-        </ul>
-        <a href="#" class="btn catalog__btn">Get to know the rest</a>
+          <section class="catalog__slider">
+            <ul class="catalog__list">
+              <li class="catalog__item catalog-item">
+                <div class="catalog-item__img">
+                  <img alt="cat Katrine">
+                </div>
+                <b class="catalog-item__name">Katrine</b>
+                <a href="#" class="btn catalog-item__btn">Learn more</a>
+              </li>
+              <li class="catalog__item catalog-item">
+                <div class="catalog-item__img">
+                  <img alt="dog Jennifer">
+                </div>
+                <b class="catalog-item__name">Jennifer</b>
+                <a href="#" class="btn catalog-item__btn">Learn more</a>
+              </li>
+              <li class="catalog__item catalog-item">
+                <div class="catalog-item__img">
+                  <img alt="dog Woody">
+                </div>
+                <b class="catalog-item__name">Woody</b>
+                <a href="#" class="btn catalog-item__btn">Learn more</a>
+              </li>
+            </ul>
+          </section>
+          <a href="#" class="btn catalog__btn">Get to know the rest</a>
+        </div>
       </article>
 
       <section class="help">
-        <section class="help__non-commercial help-non-commercial">
-          <h2 class="title2 help-non-commercial__title">Than you can help our shelter</h2>
-          <ul class="help__list">
-            <li class="help__item">Pet food</li>
-            <li class="help__item">Transportation</li>
-            <li class="help__item">Toys</li>
-            <li class="help__item">Bowls and cups</li>
-            <li class="help__item">Shampoos</li>
-            <li class="help__item">Vitamins</li>
-            <li class="help__item">Medicines</li>
-            <li class="help__item">Collars / leashes</li>
-            <li class="help__item">Sleeping area</li>
-          </ul>
-        </section>
-        <section class="help__commercial help-commercial">
-          <h2 class="title2 help-commercial__title">In addition, you can make a donation</h2>
-          <span class="help-commercial__label">Name of the bank / Type of bank account</span>
-          <span class="help-commercial__account">8380 2880 8028 8791 7435</span>
-          <span class="help-commercial__description">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
-        </section>
+        <div class="help__wrapper wrapper">
+          <section class="help__non-commercial help-non-commercial">
+            <h2 class="title2 help-non-commercial__title">Than you can help our shelter</h2>
+            <ul class="help__list">
+              <li class="help__item">Pet food</li>
+              <li class="help__item">Transportation</li>
+              <li class="help__item">Toys</li>
+              <li class="help__item">Bowls and cups</li>
+              <li class="help__item">Shampoos</li>
+              <li class="help__item">Vitamins</li>
+              <li class="help__item">Medicines</li>
+              <li class="help__item">Collars / leashes</li>
+              <li class="help__item">Sleeping area</li>
+            </ul>
+          </section>
+          <section class="help__commercial help-commercial">
+            <h2 class="title2 help-commercial__title">In addition, you can make a donation</h2>
+            <span class="help-commercial__label">Name of the bank / Type of bank account</span>
+            <span class="help-commercial__account">8380 2880 8028 8791 7435</span>
+            <span class="help-commercial__description">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+          </section>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <section class="site-footer__contacts contacts">
-        <h2 class="title2 contacts__title">For questions and suggestions</h2>
-        <a href="mailto:email@shelter.com">email@shelter.com</a>
-        <a href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
-      </section>
-      <section class="site-footer__location location">
-        <h2 class="title2 location__title">We are waiting for your visit</h2>
-        <span class="location__place">Boston, Central Street, 1st (Entrance from the store)</span>
-        <span class="location__place">London, South Park, 18st</span>
-      </section>
+      <div class="site-footer__wrapper wrapper">
+        <section class="site-footer__contacts contacts">
+          <h2 class="title2 contacts__title">For questions and suggestions</h2>
+          <a href="mailto:email@shelter.com">email@shelter.com</a>
+          <a href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+        </section>
+        <section class="site-footer__location location">
+          <h2 class="title2 location__title">We are waiting for your visit</h2>
+          <span class="location__place">Boston, Central Street, 1st (Entrance from the store)</span>
+          <span class="location__place">London, South Park, 18st</span>
+        </section>
+      </div>
     </footer>
+
   </body>
 </html>

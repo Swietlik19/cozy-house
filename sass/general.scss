@@ -1,0 +1,47 @@
+$main-font: Arial, Helvetica, sans-serif;
+$title-font: Georgia, Times New Roman, serif;
+$main-color: #f1cdb3; /* Персиковый */
+$bg-color-1: #fafafa; /* Светло-серый */
+$bg-color-2: #f6f6f6; /* Чуть темный серый */
+
+%item-reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для body */
+body {
+  @extend %item-reset;
+
+  max-width: 1920px;
+
+  font-family: $main-font;
+  color: #545454; /* Тёмно-серый */
+  font-size: 15px;
+  line-height: 24px;
+  background-color: $bg-color-1;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Общие стили заголовков */
+.site-title {
+  @extend %item-reset;
+
+  font-family: $title-font;
+  font-size: 44px;
+  line-height: 57px;
+}
+
+.title2 {
+  @extend %item-reset;
+
+  font-family: $title-font;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 45px;
+}
