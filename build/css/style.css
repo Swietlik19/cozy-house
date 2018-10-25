@@ -79,6 +79,27 @@ body {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.site-header__scroll {
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-right: 6px solid #cdcdcd;
+  border-bottom: 6px solid #cdcdcd;
+  background-color: transparent;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+      -ms-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+
+.site-header__scroll:hover,
+.site-header__scroll:focus {
+  border-color: white; }
+
 .site-header__wrapper {
   /* Чтобы выровнять блоки внутри site-offer посередине, делаем врапперу flex, а сайт офферу flex-grow = 2, чтобы он занял всю свободную высоту */
   display: -webkit-box;
@@ -121,7 +142,6 @@ body {
   /* Светло-серый */
   text-decoration: none;
   -webkit-transition: .5s ease-in-out;
-  -moz--transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out; }
 
@@ -134,7 +154,6 @@ body {
           border-radius: 1.5px;
   background-color: transparent;
   -webkit-transition: .8s ease-in-out;
-  -moz--transition: .8s ease-in-out;
   -o-transition: .8s ease-in-out;
   transition: .8s ease-in-out; }
 
@@ -149,7 +168,6 @@ body {
 .site-nav__item:active .site-nav__link:after {
   background-color: #ccb5a4;
   -webkit-transition: 0s ease-in-out;
-  -moz--transition: 0s ease-in-out;
   -o-transition: 0s ease-in-out;
   transition: 0s ease-in-out; }
 
@@ -211,3 +229,6 @@ body {
   margin: 0 auto;
   margin-bottom: 68px;
   text-align: center; }
+
+.catalog__list {
+  list-style: none; }
