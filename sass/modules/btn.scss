@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 14px 44px;
+  padding: 12px 44px;
 
   font-family: $title-font;
   font-size: 17px;
@@ -10,12 +10,12 @@
 
   border-radius: 26px;
   background-color: transparent;
+  cursor: pointer;
 
-  -webkit-transition: .5s ease-in-out;
-  -moz--transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
+/* КНОПКИ ХЕДЕРА */
 .site-offer__btn {
   background-color: #f1cdb3; /* персиковый */
 }
@@ -29,5 +29,76 @@
 }
 
 .site-offer__btn:active {
-  background-color: #ccb5a4;
+  background-color: #eac2a5;
 }
+/* END    КНОПКИ ХЕДЕРА  */
+
+
+/* КНОПКИ МЭЙН */
+  /* Кнопки */
+.catalog-item__btn,
+.catalog__btn {
+  border: solid 2px $main-color;
+}
+
+.catalog-item:hover .catalog-item__btn,
+.catalog-item:focus .catalog-item__btn,
+.catalog__btn:hover,
+.catalog__btn:focus {
+  background-color: $main-color;
+}
+
+.catalog__btn {
+  margin: 0 auto !important;
+}
+  /* END   Кнопки */
+
+
+  /* кнопки слайдера */
+.controls__btn {
+  position: absolute;
+  top: 45%;
+
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  font-size: 0;
+
+  border: solid 2px $main-color;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}
+
+.controls__btn img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+
+.controls__btn--prev img {
+  transform: translateY(-50%);
+}
+
+.controls__btn--next img {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.controls__btn:hover,
+.controls__btn:focus {
+  background-color: $main-color;
+}
+
+.controls__btn:active {
+  background-color: #eac2a5;
+}
+  /* END   кнопки слайдера */
+/* END    КНОПКИ МЭЙН */
