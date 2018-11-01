@@ -377,6 +377,7 @@ img {
 .help__item svg {
   display: block;
   width: 45px;
+  max-height: 70px;
   margin: 0 auto;
   margin-bottom: 25px;
   fill: #f1cdb3; }
