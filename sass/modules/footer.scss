@@ -1,0 +1,137 @@
+.site-footer {
+  @extend %item-reset;
+
+  padding: 80px 0;
+
+  background: {
+    color: #2a2421; /* Тёмно-коричневый */
+    image: url(../../img/bg-footer.jpg);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__contacts {
+     @extend %item-reset;
+
+    width: 300px;
+    margin-right: 174px;
+  }
+
+  &__location {
+    @extend %item-reset;
+
+    width: 300px;
+  }
+
+  .title2 {
+    color: #fff;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 35px;
+}
+
+.location__title {
+  margin-bottom: 28px;
+}
+
+.contacts a {
+  position: relative;
+
+  display: block;
+  padding-left: 60px;
+
+  font-family: $other-font;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: $main-color;
+  text-decoration: none;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    transform: translateY(-50%);
+  }
+
+  svg * {
+    transition: fill 0.5s ease-in-out;
+  }
+
+  transition: color 0.5s ease-in-out;
+}
+
+.contacts a:hover {
+  color: #fddcc4; /* светло-персиковый */
+
+  svg * {
+    fill: #fddcc4;
+  }
+}
+
+.contacts a:focus {
+  color: #fddcc4; /* светло-персиковый */
+
+  svg * {
+    fill: #fddcc4;
+  }
+}
+
+.contacts a:active {
+  color: #eac2a5;
+
+  svg * {
+    fill: #eac2a5;
+  }
+}
+
+.contacts__email {
+  @extend %item-reset;
+
+  margin-bottom: 45px;
+}
+
+.contacts__tel {
+  @extend %item-reset;
+}
+
+.location span {
+  @extend %item-reset;
+
+  position: relative;
+
+  display: block;
+  padding-left: 50px;
+
+  font-family: $other-font;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: $main-color;
+}
+
+.location__place:first-of-type {
+  margin-bottom: 30px;
+}
+
+.location svg {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+
+  display: block;
+  width: 36px;
+  height: 36px;
+
+  transform: translateY(-50%);
+}

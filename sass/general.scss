@@ -1,8 +1,9 @@
 $main-font: Arial, Helvetica, sans-serif;
 $title-font: Georgia, Times New Roman, serif;
+$other-font: Times New Roman, sans-serif;
 $main-color: #f1cdb3; /* Персиковый */
 $bg-color-1: #fafafa; /* Светло-серый */
-$bg-color-2: #f6f6f6; /* Чуть темный серый */
+$bg-color-2: #f6f6f6; /* Чуть  темный  серый */
 $font-color: #545454; /* Тёмно-серый */
 
 %item-reset {
@@ -11,7 +12,7 @@ $font-color: #545454; /* Тёмно-серый */
   padding: 0;
 }
 
-/* Стили для body */
+/* Стили  для body */
 body {
   @extend %item-reset;
 
@@ -23,18 +24,21 @@ body {
   line-height: 24px;
   background-color: $bg-color-1;
 }
-/* END Стили для body */
+/* END Стили  для body */
 
 /* Общие стили */
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 img {
   @extend %item-reset;
 
   vertical-align: middle;
+}
+
+.wrapper {
+  @extend %item-reset;
+
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
 }
 
   /* заголовки */
@@ -53,6 +57,7 @@ img {
   font-weight: normal;
   font-size: 35px;
   line-height: 45px;
+  letter-spacing: 2.1px;
 }
   /* END заголовки */
 
