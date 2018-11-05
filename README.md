@@ -1,2 +1,2 @@
 # cozy-house
-A site from a free psd template. In the process
+A site from a free psd template.
